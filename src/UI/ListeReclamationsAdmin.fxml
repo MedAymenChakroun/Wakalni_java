@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="787.0" stylesheets="@../Style/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.ListeReclamationsAdminController">
+   <children>
+      <Button fx:id="Refresh" layoutX="632.0" layoutY="435.0" mnemonicParsing="false" onAction="#RefreshAction" prefHeight="46.0" prefWidth="141.0" text="Rafraichir" />
+      <TableView fx:id="table" layoutX="-4.0" prefHeight="433.0" prefWidth="787.0" styleClass="noheader" stylesheets="@../Style/noheader.css">
+        <columns>
+          <TableColumn fx:id="col_nomclient" prefWidth="129.0" text="Client" />
+          <TableColumn fx:id="col_sujet" prefWidth="151.0" text="Sujet" />
+            <TableColumn fx:id="col_contenu" prefWidth="374.0" text="Contenu" />
+            <TableColumn fx:id="col_etat" prefWidth="128.0" text="Etat" />
+        </columns>
+      </TableView>
+      <Button fx:id="Refresh1" layoutX="8.0" layoutY="435.0" mnemonicParsing="false" onAction="#Retourner" prefHeight="46.0" prefWidth="141.0" text="← Retour" />
+      <Button fx:id="Refuser" layoutX="319.0" layoutY="435.0" mnemonicParsing="false" onAction="#RefuserAction" prefHeight="46.0" prefWidth="141.0" text="Refuser" />
+      <Button fx:id="Valider" layoutX="472.0" layoutY="435.0" mnemonicParsing="false" onAction="#ValiderAction" prefHeight="46.0" prefWidth="141.0" text="Valider" />
+      <Button fx:id="Supprimer" layoutX="159.0" layoutY="435.0" mnemonicParsing="false" onAction="#SupprimerAction" prefHeight="46.0" prefWidth="141.0" text="Supprimer" />
+   </children>
+</AnchorPane>

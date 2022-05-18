@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Exline/Desktop/javaV2/wakalni_java_final_v2/src/UI/Reset_pwdController.java</file>
+            <file>file:/C:/Users/Exline/Desktop/javaV2/wakalni_java_final_v2/src/services/commandeservice.java</file>
+            <file>file:/C:/Users/Exline/Desktop/javaV2/wakalni_java_final_v2/src/entities/user.java</file>
+            <file>file:/C:/Users/Exline/Desktop/javaV2/wakalni_java_final_v2/src/UI/controllerinterfacepanier.java</file>
+            <file>file:/C:/Users/Exline/Desktop/javaV2/wakalni_java_final_v2/src/UI/Accueil_userController.java</file>
+            <file>file:/C:/Users/Exline/Desktop/javaV2/wakalni_java_final_v2/src/UI/ModUser_backendController.java</file>
+            <file>file:/C:/Users/Exline/Desktop/javaV2/wakalni_java_final_v2/src/UI/ProfileController.java</file>
+            <file>file:/C:/Users/Exline/Desktop/javaV2/wakalni_java_final_v2/src/UI/EspaceReviewController.java</file>
+            <file>file:/C:/Users/Exline/Desktop/javaV2/wakalni_java_final_v2/src/entities/panier.java</file>
+            <file>file:/C:/Users/Exline/Desktop/javaV2/wakalni_java_final_v2/src/wakalni_java_final/Wakalni_java_final.java</file>
+            <file>file:/C:/Users/Exline/Desktop/javaV2/wakalni_java_final_v2/src/UI/AccueilController.java</file>
+            <file>file:/C:/Users/Exline/Desktop/javaV2/wakalni_java_final_v2/src/entities/commande.java</file>
+            <file>file:/C:/Users/Exline/Desktop/javaV2/wakalni_java_final_v2/src/UI/ListProduitController.java</file>
+            <file>file:/C:/Users/Exline/Desktop/javaV2/wakalni_java_final_v2/src/services/panierservice.java</file>
+            <file>file:/C:/Users/Exline/Desktop/javaV2/wakalni_java_final_v2/src/utilities/PDFUtils.java</file>
+            <file>file:/C:/Users/Exline/Desktop/javaV2/wakalni_java_final_v2/src/utilities/datasource.java</file>
+        </group>
+    </open-files>
+</project-private>

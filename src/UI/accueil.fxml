@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="513.0" prefWidth="992.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.AccueilController">
+   <children>
+      <AnchorPane layoutX="-1.0" opacity="0.61" prefHeight="513.0" prefWidth="237.0" style="-fx-background-color: orange;">
+         <children>
+            <Button fx:id="btn_leftovers" layoutX="59.0" layoutY="360.0" mnemonicParsing="false" onAction="#leftovers" prefHeight="33.0" prefWidth="120.0" text="Leftovers">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="16.0">
+                     <image>
+                        <Image url="@../photo/1564525_arrow_load_refresh_reload_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_produit" layoutX="59.0" layoutY="178.0" mnemonicParsing="false" onAction="#produit" prefHeight="33.0" prefWidth="120.0" text="Produit">
+               <graphic>
+                  <ImageView fx:id="Pr" fitHeight="24.0" fitWidth="24.0">
+                     <image>
+                        <Image url="@../photo/1564496_basket_cart_shop_shopping_store_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_panier" layoutX="59.0" layoutY="226.0" mnemonicParsing="false" onAction="#panier" prefHeight="33.0" prefWidth="120.0" text="Commandes">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="24.0">
+                     <image>
+                        <Image url="@../photo/1564497_basket_cart_food_grosseries_shop_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_reviews" layoutX="59.0" layoutY="270.0" mnemonicParsing="false" onAction="#reviews" prefHeight="33.0" prefWidth="120.0" text="Reviews">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="20.0">
+                     <image>
+                        <Image url="@../photo/1564513_comment_message_voice_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_user" layoutX="59.0" layoutY="132.0" mnemonicParsing="false" onAction="#user" prefHeight="33.0" prefWidth="120.0" text="Utilisateur" textFill="#1b1b1b">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="22.0">
+                     <image>
+                        <Image url="@../photo/1564534_customer_man_user_account_profile_icon_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_logout" layoutX="59.0" layoutY="456.0" mnemonicParsing="false" onAction="#logout" prefHeight="20.0" prefWidth="120.0" style="-fx-background-color: red; -fx-text-fill: white;" text="Se déconnecter">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffffc5" height="61.0" layoutX="1.0" stroke="TRANSPARENT" strokeType="INSIDE" width="237.0" />
+            <ImageView fitHeight="33.0" fitWidth="127.0" layoutX="56.0" layoutY="9.0">
+               <image>
+                  <Image url="@../photo/logo_2.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn_reclamation" layoutX="59.0" layoutY="315.0" mnemonicParsing="false" onAction="#reclamation" prefHeight="33.0" prefWidth="120.0" text="Reclamations">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="20.0">
+                     <image>
+                        <Image url="@../photo/1564513_comment_message_voice_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="237.0" prefHeight="513.0" prefWidth="636.0">
+         <children>
+            <ImageView fitHeight="513.0" fitWidth="754.0" opacity="0.5">
+               <image>
+                  <Image url="@../photo/ball-park-brand-RKQ4-Q5FF-o-unsplash.jpg" />
+               </image>
+            </ImageView>
+            <TabPane prefHeight="513.0" prefWidth="754.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <tabs>
+                  <Tab fx:id="comptes_tab" text="Comptes">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="432.0" prefWidth="788.0">
+                           <children>
+                              <Label layoutX="28.0" layoutY="53.0" prefHeight="42.0" prefWidth="270.0" stylesheets="@../../../jbootx-master/jbootx-master/src/main/resources/bootstrap3.css" text="Affichage des comptes Wakalni">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="17.0" />
+                                 </font>
+                              </Label>
+                              <TableView fx:id="aff_table" editable="true" layoutX="28.0" layoutY="104.0" prefHeight="301.0" prefWidth="672.0" style="-fx-background-color: none;">
+                                 <columns>
+                                    <TableColumn id="id_aff" fx:id="id" prefWidth="74.0" text="ID" />
+                                    <TableColumn id="nom_aff" fx:id="nom" editable="true" prefWidth="74.0" text="Nom" />
+                                    <TableColumn id="prenom_aff" fx:id="prenom" editable="true" prefWidth="76.0" text="Prénom" />
+                                    <TableColumn id="tel_aff" fx:id="tel" editable="true" prefWidth="75.0" text="Téléphone" />
+                                    <TableColumn id="adresse_aff" fx:id="adr" editable="true" prefWidth="75.0" text="Adresse" />
+                                    <TableColumn id="email_aff" fx:id="email" editable="true" prefWidth="75.0" text="E-mail" />
+                                    <TableColumn id="role_aff" fx:id="role" editable="true" prefWidth="75.0" text="Role" />
+                                    <TableColumn id="modifier_aff" fx:id="modifier" prefWidth="75.0" text="Modifier" />
+                                    <TableColumn id="supprimer_aff" fx:id="supprimer" prefWidth="74.0" text="Supprimer" />
+                                 </columns>
+                              </TableView>
+                              <TextField fx:id="search" layoutX="549.0" layoutY="61.0" onKeyReleased="#search" prefHeight="25.0" prefWidth="151.0" />
+                              <Button fx:id="pdf" layoutX="593.0" layoutY="421.0" mnemonicParsing="false" onAction="#gen_pdf" style="-fx-background-color: white; -fx-text-fill: red; -fx-border-color: red;" text="Génération PDF">
+                                 <font>
+                                    <Font name="Segoe UI Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Label layoutX="482.0" layoutY="66.0" text="Recherche" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Ajouter Compte ">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <AnchorPane layoutX="295.0" layoutY="68.0" prefHeight="200.0" prefWidth="215.0" />
+                              <AnchorPane layoutX="212.0" layoutY="85.0" opacity="0.84" prefHeight="315.0" prefWidth="330.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <Button fx:id="ajouter" defaultButton="true" layoutX="128.0" layoutY="276.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: orange; -fx-text-fill: white;" text="Ajouter" />
+                                    <Label layoutX="30.0" layoutY="21.0" text="Ajouter un Nouveau Compte">
+                                       <font>
+                                          <Font name="Segoe UI Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="fld_nom" layoutX="70.0" layoutY="54.0" prefHeight="25.0" prefWidth="190.0" promptText="Nom" />
+                                    <TextField fx:id="fld_prenom" layoutX="70.0" layoutY="81.0" prefHeight="25.0" prefWidth="190.0" promptText="Prénom" />
+                                    <TextField fx:id="fld_email" layoutX="70.0" layoutY="109.0" prefHeight="25.0" prefWidth="190.0" promptText="E-mail" />
+                                    <TextField fx:id="fld_num" layoutX="70.0" layoutY="212.0" prefHeight="25.0" prefWidth="190.0" promptText="Numéro" />
+                                    <TextField fx:id="fld_adr" layoutX="70.0" layoutY="237.0" prefHeight="25.0" prefWidth="190.0" promptText="Adresse" />
+                                    <PasswordField fx:id="fld_pwd" layoutX="70.0" layoutY="137.0" prefHeight="25.0" prefWidth="190.0" promptText="Mot de passe" />
+                                    <PasswordField fx:id="fld_pwd2" layoutX="70.0" layoutY="162.0" prefHeight="25.0" prefWidth="190.0" promptText="Confirmer mot de passe" />
+                                    <ComboBox fx:id="cmb_role" layoutX="70.0" layoutY="187.0" prefHeight="25.0" prefWidth="190.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

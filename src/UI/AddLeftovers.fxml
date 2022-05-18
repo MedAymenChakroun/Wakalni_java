@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.AddLeftoversController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" opacity="0.43">
+         <image>
+            <Image url="@../photo/ball-park-brand-RKQ4-Q5FF-o-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="25.0" layoutY="14.0" mnemonicParsing="false" onAction="#retour" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: orange;" text="Retour" textFill="WHITE" />
+      <Label layoutX="140.0" layoutY="84.0" text="Sujet" />
+      <Label layoutX="141.0" layoutY="155.0" text="Type" />
+      <Label layoutX="140.0" layoutY="216.0" text="Quantite" />
+      <Label layoutX="136.0" layoutY="270.0" text="Date Expiration" />
+      <TextField fx:id="tf_sujet" layoutX="232.0" layoutY="83.0" />
+      <TextField fx:id="tf_type" layoutX="232.0" layoutY="154.0" />
+      <TextField fx:id="tf_quantite" layoutX="232.0" layoutY="212.0" />
+      <Button layoutX="273.0" layoutY="336.0" mnemonicParsing="false" onAction="#ajouterLeftovers" text="Ajouter" />
+      <DatePicker fx:id="dateexp" layoutX="236.0" layoutY="266.0" />
+   </children>
+</AnchorPane>

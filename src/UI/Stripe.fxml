@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane id="AnchorPane" fx:id="scenePane" prefHeight="661.0" prefWidth="621.0" styleClass="mainFxmlClass" stylesheets="@stripe.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.StripeFXMLController">
+   <children>
+      <WebView fx:id="webv" layoutX="4.0" prefHeight="640.0" prefWidth="794.0" stylesheets="@stripe.css" />
+   </children>
+</AnchorPane>

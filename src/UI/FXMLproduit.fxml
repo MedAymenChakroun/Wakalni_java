@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="821.0" prefWidth="1038.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.FXMLproduitController">
+   <children>
+      <Label layoutX="463.0" layoutY="81.0" prefHeight="62.0" prefWidth="215.0" text="Produit" textFill="RED">
+         <font>
+            <Font name="Berlin Sans FB" size="54.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="290.0" layoutY="246.0" onMouseClicked="#getSelected" prefHeight="359.0" prefWidth="505.0">
+        <columns>
+          <TableColumn fx:id="NomColmn" prefWidth="137.0" text="Nom" />
+          <TableColumn fx:id="typeColmn" prefWidth="132.0" text="Type" />
+            <TableColumn fx:id="cridColmn" prefWidth="106.0" text="Crid" />
+            <TableColumn fx:id="prixColmn" minWidth="6.0" prefWidth="126.0" text="Prix" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnajou" layoutX="220.0" layoutY="636.0" mnemonicParsing="false" onAction="#Ajouter" prefHeight="53.0" prefWidth="140.0" style="-fx-background-color: red;" text="Ajouter" textFill="WHITE" />
+      <Button fx:id="btnMod" layoutX="373.0" layoutY="636.0" mnemonicParsing="false" onAction="#Modiffier" prefHeight="53.0" prefWidth="140.0" style="-fx-background-color: red;" text="Modiffier" textFill="WHITE" />
+      <Button fx:id="btnSupp" layoutX="524.0" layoutY="636.0" mnemonicParsing="false" onAction="#Supprimer" prefHeight="53.0" prefWidth="140.0" style="-fx-background-color: red;" text="supprimer" textFill="WHITE" />
+      <TextField fx:id="txtrech" layoutX="338.0" layoutY="169.0" onAction="#search_Formation" prefHeight="41.0" prefWidth="286.0" />
+      <Button fx:id="btnajou1" layoutX="853.0" layoutY="28.0" mnemonicParsing="false" onAction="#Offre" prefHeight="53.0" prefWidth="140.0" style="-fx-background-color: red;" text="Offre" textFill="WHITE" />
+      <Button fx:id="btn_retour" layoutX="65.0" layoutY="55.0" mnemonicParsing="false" onAction="#retour" prefHeight="53.0" prefWidth="140.0" style="-fx-background-color: red;" text="Retour" textFill="WHITE" />
+   </children>
+</AnchorPane>

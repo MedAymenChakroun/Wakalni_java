@@ -1,0 +1,32 @@
+
+#cardcredit {          
+    -fx-graphic-text-gap : 10;
+}
+.secondback{
+    
+    -fx-background-color:#008080;
+    
+}
+.gris{
+    
+    -fx-background-color:#A0B2C0;
+    -fx-background-radius:20;
+}
+.redbutton{
+    -fx-background-color:#A0B2C0;
+    -fx-background-radius:20;   
+}
+
+.button{
+    -fx-background-color:#008080;
+    -fx-background-radius:20;
+}
+
+
+.mainFxmlClass {
+    
+}
+.rect-rount{
+    -fx-background-radius:20;
+    }
+    

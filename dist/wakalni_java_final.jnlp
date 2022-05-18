@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="wakalni_java_final.jnlp">
+  <information>
+    <title>wakalni_java_final</title>
+    <vendor>malek guemri</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\argon2-jvm-2.11.jar" size="414227" download="eager" />
+    <jar href="lib\argon2-jvm-nolibs-2.11.jar" size="22413" download="eager" />
+    <jar href="lib\barcodes-7.1.13.jar" size="150644" download="eager" />
+    <jar href="lib\controlsfx-8.40.11.jar" size="985420" download="eager" />
+    <jar href="lib\font-asian-7.1.13.jar" size="2166123" download="eager" />
+    <jar href="lib\forms-7.1.13.jar" size="130648" download="eager" />
+    <jar href="lib\hyph-7.1.13.jar" size="982956" download="eager" />
+    <jar href="lib\io-7.1.13.jar" size="811242" download="eager" />
+    <jar href="lib\itextpdf-5.5.13.3.jar" size="2334491" download="eager" />
+    <jar href="lib\javax.mail-1.6.2.jar" size="659031" download="eager" />
+    <jar href="lib\jna-5.8.0.jar" size="1729586" download="eager" />
+    <jar href="lib\kernel-7.1.13.jar" size="1220253" download="eager" />
+    <jar href="lib\layout-7.1.13.jar" size="490006" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+    <jar href="lib\pdfa-7.1.13.jar" size="55597" download="eager" />
+    <jar href="lib\pdftest-7.1.13.jar" size="29673" download="eager" />
+    <jar href="lib\sign-7.1.13.jar" size="128967" download="eager" />
+    <jar href="lib\slf4j-jdk14-1.7.2.jar" size="7845" download="eager" />
+    <jar href="lib\spring-security-crypto-5.6.2.jar" size="81570" download="eager" />
+    <jar href="lib\styled-xml-parser-7.1.13.jar" size="537018" download="eager" />
+    <jar href="lib\svg-7.1.13.jar" size="157186" download="eager" />
+    <jar href="lib\twilio-8.9.0-jar-with-dependencies.jar" size="8358946" download="eager" />
+    <jar href="wakalni_java_final.jar" size="220379" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="wakalni_java_final" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="wakalni_java_final.Wakalni_java_final"  name="wakalni_java_final" />
+  <update check="always"/>
+</jnlp>

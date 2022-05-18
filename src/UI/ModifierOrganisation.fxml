@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="retour" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.ModifierOrganisationController">
+   <children>
+      <Label layoutX="85.0" layoutY="85.0" text="Nom" />
+      <Label layoutX="85.0" layoutY="129.0" text="Adresse" />
+      <Label layoutX="93.0" layoutY="180.0" text="Email" />
+      <Label layoutX="91.0" layoutY="226.0" text="Numero" />
+      <Label layoutX="84.0" layoutY="270.0" text="ID Leftover" />
+      <TextField fx:id="tf_nom" layoutX="207.0" layoutY="80.0" />
+      <TextField fx:id="tf_adresse" layoutX="207.0" layoutY="124.0" />
+      <TextField fx:id="tf_email" layoutX="207.0" layoutY="175.0" />
+      <TextField fx:id="tf_numero" layoutX="207.0" layoutY="221.0" />
+      <Button layoutX="329.0" layoutY="328.0" mnemonicParsing="false" onAction="#modifier" text="Modifier" />
+      <ComboBox fx:id="combo_id" layoutX="207.0" layoutY="29.0" onMouseClicked="#getId" prefWidth="150.0" />
+      <Button layoutX="45.0" layoutY="8.0" mnemonicParsing="false" onAction="#retour" prefHeight="40.0" prefWidth="108.0" style="-fx-background-color: black;">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/retour.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <TextField fx:id="id_left" layoutX="207.0" layoutY="265.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.ModifierLeftoversController">
+   <children>
+      <Label layoutX="95.0" layoutY="95.0" text="Sujet" />
+      <Label layoutX="94.0" layoutY="139.0" text="Type" />
+      <Label layoutX="94.0" layoutY="179.0" text="Quantite" />
+      <Label layoutX="94.0" layoutY="225.0" text="Date Expiration" />
+      <TextField fx:id="tf_sujet" layoutX="217.0" layoutY="90.0" />
+      <TextField fx:id="tf_type" layoutX="217.0" layoutY="134.0" />
+      <TextField fx:id="tf_quantite" layoutX="217.0" layoutY="185.0" />
+      <Button layoutX="358.0" layoutY="294.0" mnemonicParsing="false" onAction="#modifier" text="Modifier" />
+      <ComboBox fx:id="combo_id" layoutX="217.0" layoutY="39.0" onMouseClicked="#getId" prefWidth="150.0" />
+      <DatePicker fx:id="dateexp" layoutX="217.0" layoutY="231.0" />
+      <Button layoutX="10.0" layoutY="1.0" mnemonicParsing="false" onAction="#retour" prefHeight="65.0" prefWidth="121.0" style="-fx-background-color: black;">
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/retour.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+   </children>
+</AnchorPane>
